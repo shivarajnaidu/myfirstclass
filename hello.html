@@ -7,62 +7,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-
+    img {
+      width: max(400px, 50%);
+    }
   </style>
 </head>
 
 <body>
-  <h1>Forms</h1>
+  <!-- Media tags -->
+  <!-- - video
+  - audio 
+  - img
+  - picture
+  - canvas 
+  - svg
+  - iframe  -->
 
   <!-- 
-  - form
-  - input
-  - select
-  - option
-  - textarea
-  - button
-  - label
-  - legend
-  - fieldset
-  - progress
-  - meter
+  .png
+  .svg
+  .jpeg
+  .webp
+  .avif
+  .gif
+  .img
    -->
 
-  
-  <progress value="30" max="200"></progress>
-  <meter value="20" max="180" low="40" optimum="80" high="150" min="0"></meter>
+  <!-- <img src="./assets/bigbunny-1.png" alt="Big bunny poster">
+  <img src="./assets/bigbunny-2.png" alt="big Bunny standing">
+ -->
 
-  <form action="https://localhost:3000/login">
-    <input type="file" multiple accept="image/png">
-    <input id="pass" type="password" placeholder="*****">
-    <button type="button" id="show-pass">Show Pass</button>
-    <button type="button" id="hide-pass">Hide Pass</button>
+ <!-- 
+ 500
+ 600
+ 800
+ 1000
+ 1200
+ 1800
+ TV
+  -->
+ 
+<h1>Main page</h1>
+<a href="https://www.youtube.com/embed/1KuDrATYj20">Go to youtube</a>
 
-    <select>
-      <option>Yuvaraj</option>
-      <option>babu</option>
-      <option>Balu</option>
-    </select>
-    <textarea></textarea>
-    <button>Submit</button>
+<iframe src="https://www.youtube.com/embed/1KuDrATYj20"></iframe>
 
-  </form>
 
-  <script>
-    'use strict';
-    const showPasswordButton = document.querySelector('#show-pass');
-    const hidePasswordButton = document.querySelector('#hide-pass');
-    const inputElement = document.querySelector('#pass');
-
-    showPasswordButton.onclick = function () {
-      inputElement.type = "text"
-    }
-
-    hidePasswordButton.onclick = function () {
-      inputElement.type = "password"
-    }
-
-  </script>
 </body>
 
 </html>
