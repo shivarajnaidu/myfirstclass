@@ -7,52 +7,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    img {
-      width: max(400px, 50%);
+    * {
+      box-sizing: border-box;
     }
+
+    body {
+      height: 150vh;
+    }
+
+    .box {
+      border: 1px solid red;
+      top: 100px;
+    }
+
+    .p-relative {
+      position: relative;
+      border-color: green;
+    }
+
+    .p-absolute {
+      position: absolute;
+      border-color: rgb(0, 6, 128);
+    }
+
+    .p-fixed {
+      position: fixed;
+      border-color: rgb(216, 29, 182);
+    }
+
+    .p-sticky {
+      position: sticky;
+      border-color: rgb(64, 73, 115);
+    }
+    
+    /* 
+    - static
+    - relative
+    - absolute
+    - fixed
+    - sticky
+     */
   </style>
 </head>
 
 <body>
-  <!-- Media tags -->
-  <!-- - video
-  - audio 
-  - img
-  - picture
-  - canvas 
-  - svg
-  - iframe  -->
+  <div class="box">1</div>
+  <div class="box p-relative">2</div>
 
-  <!-- 
-  .png
-  .svg
-  .jpeg
-  .webp
-  .avif
-  .gif
-  .img
-   -->
+  <div class="box p-relative" style="height: 200px; top: 150px;">
+    <div class="box p-absolute">3</div>
+  </div>
 
-  <!-- <img src="./assets/bigbunny-1.png" alt="Big bunny poster">
-  <img src="./assets/bigbunny-2.png" alt="big Bunny standing">
- -->
-
- <!-- 
- 500
- 600
- 800
- 1000
- 1200
- 1800
- TV
-  -->
- 
-<h1>Main page</h1>
-<a href="https://www.youtube.com/embed/1KuDrATYj20">Go to youtube</a>
-
-<iframe src="https://www.youtube.com/embed/1KuDrATYj20"></iframe>
-
-
+  <div class="box p-sticky">Stick</div>
 </body>
 
 </html>
