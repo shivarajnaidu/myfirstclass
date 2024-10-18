@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .mygrid {
+            display: grid;
+            border: 2px solid red;
+            width: 100%;
+            grid-template-rows: 100%;
+            grid-template-columns: 300px;
+            /* grid-template-columns: repeat(auto-fit, minmax(300px, 33%)); */
+            /* place-content: space-between; */
+            /* gap: 10px; */
+            /* making grid resposive with min max functions */
+
+            &>div {
+                border: 2px solid blue;
+                height: 400px;
+                /* width: 40px; */
+                /* height: 40px; */
+            }
+        }
+
+        @media screen and (min-width: 500px) {
+            .mygrid {
+                grid-template-columns: repeat(2, 50%);
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            .mygrid {
+                grid-template-columns: repeat(3, 33%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mygrid">
+        <div>1</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+    </div>
+</body>
+
+</html>
