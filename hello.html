@@ -6,6 +6,7 @@
   <meta name="keyword" content="html, tutorial, hospital, surgery, heart condition">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./bs.css">
   <style>
     * {
       box-sizing: border-box;
@@ -39,7 +40,7 @@
       position: sticky;
       border-color: rgb(64, 73, 115);
     }
-    
+
     /* 
     - static
     - relative
@@ -51,14 +52,43 @@
 </head>
 
 <body>
-  <div class="box">1</div>
+  <!-- <div class="box">1</div>
   <div class="box p-relative">2</div>
 
   <div class="box p-relative" style="height: 200px; top: 150px;">
     <div class="box p-absolute">3</div>
-  </div>
+  </div> -->
 
-  <div class="box p-sticky">Stick</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+        <input class="form-control" placeholder="Hello">
+        <button type="button" class="btn btn-primary">Secondary</button>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <input class="form-control" placeholder="Hello">
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <input class="form-control" placeholder="Hello">
+      </div>
+      <div class="col-12 col-lg-4">
+        <input class="form-control" placeholder="Hello">
+      </div>
+      <div class="col-12 col-lg-4">
+        <input class="form-control" placeholder="Hello">
+      </div>
+      <div class="col-12 col-lg-4">
+        <input class="form-control" placeholder="Hello">
+      </div>
+      <div class="col-12 col-lg-4">
+        <input class="form-control" placeholder="Hello">
+      </div>
+      <div class="col-12 col-lg-4">
+        <input class="form-control" placeholder="Hello">
+      </div>
+    </div>
+  </div>
+  <!-- <div class="box p-sticky">Stick</div> -->
 </body>
 
 </html>
