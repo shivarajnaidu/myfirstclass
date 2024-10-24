@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./testscript.js"></script>
   <title>Document</title>
+
+  <script>
+    var a = 10;
+    let b = 'yuva';
+    const c = true;
+    /* 
+    string = "yuva" or 'yuva'
+    number = 3, 4.6
+    boolean true, false
+    arrays []
+    objects {}
+    null null
+    undefined 
+    bigint 2n
+    symbol
+    */
+    function handleClick() {
+      console.log('Hello team', a)
+    }
+  </script>
+
+  <style>
+    .animated-item {
+      color: red;
+      animation-name: myanimation;
+      animation-duration: 4s;
+      animation-delay: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      position: absolute;
+    }
+
+
+    @keyframes myanimation {
+      0% {
+        background-color: blue;
+      }
+      20% {
+        background-color: yellow;
+        top: 10px;
+      }
+      40% {
+        background-color: brown;
+      }
+      50% {
+        background-color: blueviolet;
+        top: 300px;
+      }
+      100% {
+        background-color: green;
+        top: 0;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
-  <h1>Google.com</h1>
-  <h2>Hello world</h2>
+  <!-- <h1 class="animated-item">Google.com</h1> -->
+  <h2 onclick="handleClick()">Hello world</h2>
 </body>
+
 </html>
